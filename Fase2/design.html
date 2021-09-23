@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HtmlDesign</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid">
+	<header>
+		<h1>Etiquetas Básicas de HTML, atributos y valores</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../Index.html">Inicio</a></li>
+			<li><a href="#">Temas</a></li>
+			<ul>
+				<li><a href="#">Etiquetas Básicas de HTML</a></li>
+				<li><a href="#">Atributos y valores</a></li>
+			</ul>
+			<li><a href="#">Recursos Digitales</a></li>
+			<ul>
+				<li><a href="#">Recurso 1</a></li>
+				<li><a href="#">Recurso 2</a></li>
+			</ul>
+			<li><a href="#">Aprendizaje</a></li>
+			<ul>
+				<li><a href="#">Actividad 1</a></li>
+				<li><a href="#">Actividad 2</a></li>
+			</ul>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>Proposito del sitio</h2>
+			<p>
+				Diseñar sitios web utilizando lenguaje HTML de acuerdo con los requerimientos del usuario.
+			</p>
+			<article>
+				<h3>Etiquetas Básicas de HTML</h3>
+				<p>En HTML las etiquetas se escriben con el formato <input type="submit"
+						value="<marca>contenido</marca>" disabled style="color: black;" style="color: red;">
+					esta etiqueta se llama <b>marca</b> y como se puede observar tiene una un comienzo y un cierre, esto
+					se distingue por que para cerrar la etiqueta se usa la barra inclinada <b>/</b>, entre las que
+					podemos
+					encontrar:</p>
+				<br>
+				<ul>
+					<li>
+						<input type="submit" value="<h1>...</h1>" disabled style="color: black;"> Este es usado para
+						definir practicamente un titulo.
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<input type="submit" value="<p>...</p>" disabled style="color: black;"> Este es usado para
+						definir un parrafo.
+					</li>
+				</ul>
+				<h2>Etiquetas de estructuracion Semantica</h2>
+				<p>Estas son las principales que debemos definir al diseñar una pagina web es decir cual sera su
+					estructura de bloques, por lo general una pagina web tiene una cabecera de titulo, un contenido
+					principal, etc</p>
+
+				<ul>
+					<li>
+						<input type="submit" value="<header>...</header>" disabled style="color: black;"> Este es usado
+						para definir la
+						cabecera de la pagina
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<input type="submit" value="<footer>...</footer>" disabled style="color: black;"> Este es usado
+						para definir el pie de
+						pagina, este por lo general contiene datos sobre quien es el creador de la pagina o datos de
+						copyright, etc.
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<input type="submit" value="<nav>...</nav>" disabled style="color: black;"> Este es usado para
+						definir un elemento de navegacion de la pagina web tal como un menu principal o menus
+						secundarios.
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<input type="submit" value="<section>...</section>" disabled style="color: black;"> Este es
+						usado para encerrar el codigo el cual puede corresponder a una seccion generica dentro de un
+						documento.
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<input type="submit" value="<aside>...</aside>" disabled style="color: black;"> Este es usado
+						para determinar el contenido que no sea principal de la pagina, este se puede usar para todos
+						los elementos secundarios, por ejemplo bloques publicitarios, enlaces externos, etc.
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<input type="submit" value="<article>...</article>" disabled style="color: black;"> Este es
+						usado para definir articulos, este por lo general es el mas importante de HTML5, ya que este
+						permite indicar el contenido de la pagian.
+					</li>
+				</ul>
+				<img src="Img/Etiquetas.png" alt="Etiquetas">
+				<h5>Etiquetas de Contenido Multimedia</h5>
+				<p>Estas etiquetas permiten integrar contenidos de multimedia sin la necesidad de compelmentos de
+					navegador, entre estas podemos encontar:</p>
+				<ul>
+					<li>
+						<input type="submit" value="<video>...</video>" disabled style="color: black;"> Este es usado
+						para integrar video.
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<input type="submit" value="<audio>...</audio>" disabled style="color: black;"> Este es usado
+						para insertar un archivo de audio mp3.
+					</li>
+				</ul>
+				<p>
+					Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. (Pág. 52 a 142)
+					Recuperado de https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=52
+				</p>
+
+
+			</article>
+			<article>
+				<h3>Atributos y valores</h3>
+				<p>Un atributo es un valor de HTMML o propiedad la cual se añade en una etiqueta el cual otorgara una
+					propiedad o comportamiento especifico en la propiedad etiqueta, para añadir un atributo solo bastara
+					en que se introduzca la propiedad etiqueta de inicio del elemento HTML en cuestion por ejemplo:<br>
+					<input type="submit" value='<div id="nombre"></div>'><br>
+					en este ejemplo se muestra el atributo se añade dentro de la etiqueta HTML inicial con el atributo
+					"id" este contiene un valor el cual le asignamos en este caso "nombre"
+				</p>
+				<h4>Tipos de atributos</h4>
+				<p>En HTML existen diferentes tipos de atributos para las etiquetas, algunos son de ambito global y
+					otros son mas especificos y solo seran validos para algunas etiquetas HTML.</p>
+				<h4>Atributos requeridos:</h4>
+				<p>Estos son atributos necesarios para las etiquetas HTML, sin esto las etiquetas por si solas no
+					tendran el comportamiento esperado.</p>
+				<br>
+				<h4>Atributos opcionales:</h4>
+				<p>Estos son atributos utilizados para modificar la funcionalidad por defecto de las etiquetas HTML</p>
+				<br>
+				<h4>Atributos globales:</h4>
+				<p>
+					Estos son atributos de ambito general, estos se pueden ser utilizados en cualquier etiqueta HTML.
+				</p>
+				<br>
+				<h4>Atributos de Evento:</h4>
+				<p>
+					Estos son atributos utilizados para hacer que las etiquetas HTML en su funcionamiento sean
+					ejecutados siempre que se cumplan unas circustancias determinadas con el propio atributo
+				</p>
+				<h4>Listado de atributos HTML5</h4>
+				<br>
+					<table class="table table-striped">
+						<thead class="thead-dark">
+							<tr>
+								<th class="col-1">
+									Atributo
+								</th>
+								<th class="col-1">
+									Etiqueta HTML5
+								</th>
+								<th class="col-3">
+									Descripción
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>
+									accept
+								</th>
+								<td>
+								 <input type="submit" value="<form>, <input>"  disabled style="color: black;" />
+								</td>
+								<td>
+									Estos son tipos de archivos aceptados por el servidor, se pueden definir con valores separados por comas, como por ejemplo:doc, ods, txt, etc. 
+								</td>
+							</tr>
+							<tr>
+								<th>
+									accept-charset
+								</th>
+								<td>
+								 <input type="submit" value="<form>"  disabled style="color: black;" />
+								</td>
+								<td>
+									Este define una lista de caracteres soportados en el formulario, como por ejemplo:  accept-charset=”ISO-8859-1″
+								</td>
+							</tr>
+							<tr>
+								<th>
+									accesskey
+								</th>
+								<td>
+								 <input type="submit" value="Atributo Global"  disabled style="color: black;" />
+								</td>
+								<td>
+									Con este podremos configurar un boton de tu teclado, con el fin de que se ejecute una accion en la pagina web, como por ejemplo: un enlace hacia una pagina de contacto.
+								</td>
+							</tr>
+							<tr>
+								<th>
+									action
+								</th>
+								<td>
+								 <input type="submit" value="<form>"  disabled style="color: black;" />
+								</td>
+								<td>
+									Con este podremos especificar la URLdonde se enviara los datos recogidos en el formulario, es muy usado en un archivo .php dentro del mismo servidor
+								</td>
+							</tr>
+							<tr>
+								<th>
+									align
+								</th>
+								<td>
+								 <input type="submit" value="<applet>, <caption>, <col>, <colgroup>, <hr>, <iframe>, <img>, <table>, <tbody>, <td>, <tfoot> , <th>, <thead>, <tr>"  disabled style="color: black;" />
+								</td>
+								<td>
+									Con este podremos especificar la URLdonde se enviara los datos recogidos en el formulario, es muy usado en un archivo .php dentro del mismo servidor
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						Víctor Sánchez. (2021, June 13). Listado de Atributos HTML - Caronte Web Studio. Atributos HTML. https://carontestudio.com/blog/atributos-html/
+					</p>
+			</article>
+
+
+		</section>
+
+	</main>
+
+</body>
+
+</html>
