@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <!-- Sección del encabezado -->
+    <header class="navbar navbar-expand-lg navbar">
+        <img src="img/logo.png" alt="Imagen de logo" class="navbar-brand" width="250">
+        <h2>Etiquetas Básicas de HTML, atributos y valores</h2>
+    </header>
+
+    <!-- Barra de menú horizontal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tema1.html">Etiquetas Básicas de HTML</a></li>
+                            <li><a class="dropdown-item" href="tema2.html">Atributos y valores</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Recursos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="recurso1.html">Audio 1</a></li>
+                            <li><a class="dropdown-item" href="recurso2.html">Audio 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aprendizaje
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="prueba1.html">prueba 1</a></li>
+                            <li><a class="dropdown-item" href="prueba2.html">prueba 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="autor.html">Autor</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion central -->
+
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 10px;">
+            <aside class="col">
+                <div class="card" style="height: 980px;">
+                    <div class="card-header bg-dark text-white">
+                        <h4>Fan page</h4>
+                    </div>
+                    <div class="card-body">
+                        <iframe class="container"
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FMinisterioTIC.Colombia%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            height="650" style="border:none;overflow:hidden; width: 100%; margin: auto; " scrolling="no"
+                            frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                </div>
+            </aside>
+            <section class="col-md-8">
+                <!--------------------------------------------------------Seccion Editable -------------------------------------------------------->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Audio Atributos y valores</li>
+                    </ol>
+                </nav>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <!--------------------------------------------------------Seccion Editable -------------------------------------------------------->
+                            <section>
+                                <!-- aquí debo cambiar en cada página con los contenidos -->
+
+                                <article class="centrado">
+                                    <h3>Audio</h3>
+                                    <br>
+                                    <audio controls>
+                                        <source src="multimedia/audio2.mp3" type="audio/mp3">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </article>
+                                <br>
+                                <article class="justificado">
+                                    <article>
+                                        <h3 id="Atributos">Atributos y valores</h3>
+                                        <p>Un atributo es un valor de HTMML o propiedad la cual se añade en una etiqueta
+                                            el cual otorgara una
+                                            propiedad o comportamiento especifico en la propiedad etiqueta, para añadir
+                                            un atributo solo bastara
+                                            en que se introduzca la propiedad etiqueta de inicio del elemento HTML en
+                                            cuestion por ejemplo:<br>
+                                            <input type="submit" value='<div id="nombre"></div>'><br>
+                                            en este ejemplo se muestra el atributo se añade dentro de la etiqueta HTML
+                                            inicial con el atributo
+                                            "id" este contiene un valor el cual le asignamos en este caso "nombre"
+                                        </p>
+                                        <h4>Tipos de atributos</h4>
+                                        <p>En HTML existen diferentes tipos de atributos para las etiquetas, algunos son
+                                            de ambito global y
+                                            otros son mas especificos y solo seran validos para algunas etiquetas HTML.
+                                        </p>
+                                        <h4>Atributos requeridos:</h4>
+                                        <p>Estos son atributos necesarios para las etiquetas HTML, sin esto las
+                                            etiquetas por si solas no
+                                            tendran el comportamiento esperado.</p>
+                                        <br>
+                                        <h4>Atributos opcionales:</h4>
+                                        <p>Estos son atributos utilizados para modificar la funcionalidad por defecto de
+                                            las etiquetas HTML</p>
+                                        <br>
+                                        <h4>Atributos globales:</h4>
+                                        <p>
+                                            Estos son atributos de ambito general, estos se pueden ser utilizados en
+                                            cualquier etiqueta HTML.
+                                        </p>
+                                        <br>
+                                        <h4>Atributos de Evento:</h4>
+                                        <p>
+                                            Estos son atributos utilizados para hacer que las etiquetas HTML en su
+                                            funcionamiento sean
+                                            ejecutados siempre que se cumplan unas circustancias determinadas con el
+                                            propio atributo
+                                        </p>
+                                        <h4>Listado de atributos HTML5</h4>
+                                        <br>
+                                        <table class="table table-striped">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th class="col">
+                                                        Atributo
+                                                    </th>
+                                                    <th class="col">
+                                                        Etiqueta HTML5
+                                                    </th>
+                                                    <th class="col-10">
+                                                        Descripción
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        accept
+                                                    </th>
+                                                    <td>
+                                                        <input type="submit" value="<form>, <input>" disabled
+                                                            style="color: black;" />
+                                                    </td>
+                                                    <td>
+                                                        Estos son tipos de archivos aceptados por el servidor, se pueden
+                                                        definir con valores separados por comas, como por ejemplo:doc,
+                                                        ods, txt, etc.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        accept-charset
+                                                    </th>
+                                                    <td>
+                                                        <input type="submit" value="<form>" disabled
+                                                            style="color: black;" />
+                                                    </td>
+                                                    <td>
+                                                        Este define una lista de caracteres soportados en el formulario,
+                                                        como por ejemplo: accept-charset=”ISO-8859-1″
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        accesskey
+                                                    </th>
+                                                    <td>
+                                                        <input type="submit" value="Atributo Global" disabled
+                                                            style="color: black;" />
+                                                    </td>
+                                                    <td>
+                                                        Con este podremos configurar un boton de tu teclado, con el fin
+                                                        de que se ejecute una accion en la pagina web, como por ejemplo:
+                                                        un enlace hacia una pagina de contacto.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        action
+                                                    </th>
+                                                    <td>
+                                                        <input type="submit" value="<form>" disabled
+                                                            style="color: black;" />
+                                                    </td>
+                                                    <td>
+                                                        Con este podremos especificar la URLdonde se enviara los datos
+                                                        recogidos en el formulario, es muy usado en un archivo .php
+                                                        dentro del mismo servidor
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        align
+                                                    </th>
+                                                    <td>
+                                                        <input type="submit" value="<applet>"   style="color: black;" disabled/>
+                                                        <br>
+                                                        <input type="submit" value="<caption>"  style="color: black;"disabled />
+                                                        <br>
+                                                        <input type="submit" value="<col>"  style="color: black;"disabled />
+                                                        <br>
+                                                        <input type="submit" value="<colgroup>"  style="color: black;"disabled />
+                                                            <br>
+                                                        <input type="submit" value="<hr>"  style="color: black;"disabled />
+                                                        <br>
+                                                        <input type="submit" value="<iframe>"  style="color: black;"disabled />
+                                                            <br>
+                                                        <input type="submit" value="<img>"  style="color:    black;"disabled/>
+                                                        <br>
+                                                        <input type="submit" value="<table>"  style="color: black;"disable />
+                                                            <br>
+                                                        <input type="submit" value="<tbody>"   style="color: black;"disabled />
+                                                            <br>
+                                                        <input type="submit" value="<td>"   style="color: black;"disabled />
+                                                            <br>
+                                                        <input type="submit" value="<tfoot>"   style="color: black;"disabled />
+                                                            <br>
+                                                        <input type="submit" value="<th>"  style="color: black;"disabled />
+                                                            <br>
+                                                        <input type="submit" value="<thead>"  style="color: black;"disabled />
+                                                            <br>
+                                                        <input type="submit" value="<tr>"  style="color: black;"disabled />
+                                                            <br>
+
+                                                    </td>
+                                                    <td>
+                                                        Con este podremos especificar la URLdonde se enviara los datos
+                                                        recogidos en el formulario, es muy usado en un archivo .php
+                                                        dentro del mismo servidor
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>
+                                            Víctor Sánchez. (2021, June 13). Listado de Atributos HTML - Caronte Web
+                                            Studio. Atributos HTML. https://carontestudio.com/blog/atributos-html/
+                                        </p>
+                                    </article>
+
+                                </article>
+                            </section>
+
+                            <!--------------------------------------------------------Seccion Editable -------------------------------------------------------->
+                        </div>
+
+
+            </section>
+
+        </div>
+
+        <!-- Pie de página -->
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="card" style="margin-top: 10px;">
+                    <p style="text-align: center;"> © Copyleft https://www.unad.edu.co/ | 17/11/2021<br>
+                        Diseño, código HTML5 y programación hecho a mano por nosotros usando herramientas de Software
+                        Libre.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
